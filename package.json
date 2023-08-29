@@ -3,14 +3,14 @@
   "version": "0.0.1",
   "description": "A personal use library for websockets",
   "main": "dist/index.js",
-  "types": "./types/index.d.ts",
+  "types": "dist",
   "keywords": [],
   "repository": {
     "url": "https://github.com/fedevcoding/ts-websockets",
     "type": "git"
   },
   "scripts": {
-    "compile": "tsc"
+    "build": "tsc"
   },
   "author": "@fedev",
   "license": "ISC",
