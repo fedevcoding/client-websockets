@@ -1,6 +1,6 @@
 {
   "name": "ts-websockets",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "A personal use library for websockets",
   "main": "dist/index.js",
   "types": "dist",
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@types/ws": "^8.5.5",
+    "viem": "^1.9.3",
     "web3": "^1.2.7",
     "ws": "^8.13.0"
   }
