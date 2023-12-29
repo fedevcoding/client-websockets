@@ -1,26 +1,39 @@
 {
   "name": "ts-websockets",
-  "version": "0.0.5",
-  "description": "A personal use library for websockets",
+  "version": "0.0.1",
+  "description": "A multi-types websockets library.",
   "main": "dist/index.js",
-  "types": "dist",
-  "keywords": [],
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "websockets",
+    "typescript",
+    "ethereum",
+    "eth",
+    "ws",
+    "web3-websockets",
+    "polling",
+    "polling-websockets",
+    "reconnecting-websockets"
+  ],
   "repository": {
     "url": "https://github.com/fedevcoding/ts-websockets",
     "type": "git"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "release": "npm run build && changeset publish",
+    "lint": "tsc && eslint . --ext .ts"
   },
   "author": "@fedev",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.4.2",
+    "@types/ws": "^8.5.10",
+    "tsup": "^8.0.1",
     "typescript": "^5.1.6"
   },
   "dependencies": {
-    "@types/ws": "^8.5.5",
-    "viem": "^1.9.3",
     "web3": "^1.2.7",
     "ws": "^8.13.0"
   }
