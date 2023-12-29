@@ -1,5 +1,8 @@
 {
-  "name": "ts-websockets",
+  "name": "client-websockets",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.1",
   "description": "A multi-types websockets library.",
   "main": "dist/index.js",
@@ -17,7 +20,7 @@
     "reconnecting-websockets"
   ],
   "repository": {
-    "url": "https://github.com/fedevcoding/ts-websockets",
+    "url": "https://github.com/fedevcoding/client-websockets",
     "type": "git"
   },
   "scripts": {
@@ -28,6 +31,7 @@
   "author": "@fedev",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.27.1",
     "@types/node": "^20.4.2",
     "@types/ws": "^8.5.10",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
