@@ -12,7 +12,7 @@ export default class ReconnectingWebSocket<DataType> {
   private pingTimer: NodeJS.Timeout | null;
   private nameIdentifier: string;
 
-  private connectionData: {} = {};
+  private connectionData = {};
   private messageCallbacks: ((data: DataType) => void)[] = [];
 
   constructor({
