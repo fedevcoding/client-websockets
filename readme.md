@@ -4,6 +4,8 @@
 
 ### This npm package provides easy-to-use WebSocket implementations for various scenarios, including polling-based, reconnecting, and Web3 subscriptions. The package is written in TypeScript and supports a generic data type for flexibility.
 
+🩷 (please consider adding a ⭐ on github) 🩷
+
 ## Installation
 
 ```bash

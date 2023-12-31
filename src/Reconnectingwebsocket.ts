@@ -93,7 +93,7 @@ export default class ReconnectingWebSocket<DataType> {
         console.log(
           `Reconnecting ${this.nameIdentifier} WebSocket in  ${
             this.reconnectInterval / 1000
-          } seconds for the ${this.retryAttempts + 1} time`
+          } seconds for the ${this.retryAttempts + 1} time`,
         );
 
         this.reconnectTimer = setInterval(() => {
